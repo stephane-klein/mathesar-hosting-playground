@@ -24,7 +24,7 @@ services:
       SECRET_KEY: secret
       DJANGO_DATABASE_KEY: default
       DJANGO_DATABASE_URL: "postgres://mathesar:password@mathesar_db:5432/mathesar"
-      MATHESAR_DATABASES: "mathesar_tables|postgresql://mathesar:password@mathesar_db:5432/mathesar"
+      MATHESAR_DATABASES: "mathesar_tables|postgresql://postgres:password@postgres:5432/postgres"
       DJANGO_SUPERUSER_PASSWORD: password
     command: ./run.sh
     volumes:
